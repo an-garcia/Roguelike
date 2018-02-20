@@ -6,6 +6,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
+    public int playerFoodPoints = 100;
+    [HideInInspector] public bool playersTurn = true;
+
     private BoardManager boardScript;                       //Store a reference to our BoardManager which will set up the level.
     private int level = 3;                                  //Current level number, expressed in game as "Day 1".
 
@@ -43,11 +46,14 @@ public class GameManager : MonoBehaviour {
     }
 
 
-
     //Update is called every frame.
     void Update()
     {
 
     }
 
+
+    public void GameOver() {
+        enabled = false;
+    }
 }
