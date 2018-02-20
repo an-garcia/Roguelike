@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1405169913298546}
+  m_IsPrefabParent: 1
+--- !u!1 &1405169913298546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4936308789935948}
+  - component: {fileID: 114499740373432164}
+  - component: {fileID: 114851950920087876}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4936308789935948
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405169913298546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.9174128, y: 0.82847404, z: -0.048855316}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114499740373432164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405169913298546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d37857ac73e84a8ab1516c94615af78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 1508913973832508, guid: 7b9202fe901b1406b809340212937279, type: 2}
+  floorTiles:
+  - {fileID: 1848627238968866, guid: 1869c3260b2fe4796a4907b910aab86f, type: 2}
+  - {fileID: 1335191246323880, guid: 4ea47441b16754feba7b7f8c9f3d0a80, type: 2}
+  - {fileID: 1625203822520638, guid: c4992f10bb6b3434fa79700145d4ce93, type: 2}
+  - {fileID: 1408107643293208, guid: 57ba8348e288945efb8d849887ac66ae, type: 2}
+  - {fileID: 1898575603488892, guid: 6fbc65e23b7d041579f906c56888adb1, type: 2}
+  - {fileID: 1681975903583300, guid: 55b7e0e5d655d4ef68d84852a10e1f12, type: 2}
+  - {fileID: 1750480959958198, guid: 7ae37d65cbca34d2883f8edca4fa0c48, type: 2}
+  - {fileID: 1291254863515272, guid: 1a7eeb74a50814d37bd2336e15125878, type: 2}
+  wallTiles:
+  - {fileID: 1435611004837904, guid: f45b4fece7ab641d284d1cccd6a37c7b, type: 2}
+  - {fileID: 1483968613673228, guid: b51dfa68607d64bcc9f22980c763d004, type: 2}
+  - {fileID: 1137765587429344, guid: b530a3af714664dcc812f6a862eb4407, type: 2}
+  - {fileID: 1746740853514998, guid: 62a5d34bfa22b458dacb68a57f8b6d63, type: 2}
+  - {fileID: 1268882834591480, guid: 6b35f2dd8d2d84ebea9ec606f55b6d48, type: 2}
+  - {fileID: 1589289546144746, guid: 14d495de63e1a4604841d1fb3802d2a8, type: 2}
+  - {fileID: 1317596058311778, guid: f6abe47cf86eb4e4893a1f39125fd048, type: 2}
+  - {fileID: 1692022069869214, guid: b6a563854671a4a4ab391cf7774934bb, type: 2}
+  foodTiles:
+  - {fileID: 1025105052343506, guid: 3b2763b2e1e8947f3b07426c19f53a28, type: 2}
+  - {fileID: 1038493435813414, guid: e7838513345064a40849019664af8095, type: 2}
+  enemyTiles:
+  - {fileID: 1555005413541572, guid: f1a2cea9ad9124bb18746d5b0f52a887, type: 2}
+  - {fileID: 1905327816363948, guid: 187b7be1fedcd435f8ce93e6fe1281c3, type: 2}
+  outerWallTiles:
+  - {fileID: 1327898297734688, guid: b9662e8a0771049a5a0a92c139599ccd, type: 2}
+  - {fileID: 1112171326043586, guid: 910bf1e3669af4f2a91a3c610f647ffb, type: 2}
+  - {fileID: 1304064074377296, guid: 9b876b742fd004d4ba12cc1ad58cb311, type: 2}
+--- !u!114 &114851950920087876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405169913298546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28054eebc855e4c58a27a239a5fd59ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
