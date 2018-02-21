@@ -52,6 +52,24 @@ public class GameManager : MonoBehaviour {
         InitGame();
     }
 
+    /*
+    //this is called only once, and the paramter tell it to be called only after the scene was loaded
+    //(otherwise, our Scene Load callback would be called the very first load, and we don't want that)
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static public void CallbackInitialization()
+    {
+        //register the callback to be called everytime the scene is loaded
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    //This is called each time a scene is loaded.
+    static private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        instance.level++;
+        instance.InitGame();
+    } */
+
+
     //This is called each time a scene is loaded.
     /*void OnLevelWasLoaded(int index)
     {
@@ -60,6 +78,7 @@ public class GameManager : MonoBehaviour {
         //Call InitGame to initialize our level.
         InitGame();
     } */
+
 
     //This is called each time a scene is loaded.
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode) 
@@ -141,9 +160,6 @@ public class GameManager : MonoBehaviour {
     //Call this to add the passed in Enemy to the List of Enemy objects.
     public void AddEnemyToList(Enemy script)
     {
-        //Enable black background image gameObject.
-        //levelImage.SetActive(true);
-
         //Add Enemy to List enemies.
         enemies.Add(script);
     }

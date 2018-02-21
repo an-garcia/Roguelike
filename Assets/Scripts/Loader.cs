@@ -17,10 +17,9 @@ public class Loader : MonoBehaviour {
             Instantiate(gameManager);
 
         //Check if a SoundManager has already been assigned to static variable GameManager.instance or if it's still null
-        /*if (SoundManager.instance == null)
+        if (SoundManager.instance == null)
 
             //Instantiate SoundManager prefab
             Instantiate(soundManager);
-            */
     }
 }
