@@ -71,15 +71,16 @@ public class GameManager : MonoBehaviour {
 
 
     //This is called each time a scene is loaded.
-    /*void OnLevelWasLoaded(int index)
+    void OnLevelWasLoaded(int index)
     {
         //Add one to our level number.
         level++;
         //Call InitGame to initialize our level.
         InitGame();
-    } */
+    }
 
 
+    /*
     //This is called each time a scene is loaded.
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode) 
     {
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour {
         //Tell our ‘OnLevelFinishedLoading’ function to stop listening for a scene change event as soon as this script is disabled. 
         //Remember to always have an unsubscription for every delegate you subscribe to!
         SceneManager.sceneLoaded -= OnLevelFinishedLoading;
-    }
+    }*/
 
     //Initializes the game for each level.
     void InitGame()
